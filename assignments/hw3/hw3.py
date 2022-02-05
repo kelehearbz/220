@@ -1,34 +1,56 @@
 """
-Name: <your name goes here – first and last>
-<ProgramName>.py
+Name: Ben Kelehear
+hw3.py
 
-Problem: <Brief, one or two sentence description of the problem that this program solves, in your own words.>
+Problem: Homework 3
 
 Certification of Authenticity:
-<include one of the following>
 I certify that this assignment is entirely my own work.
-I certify that this assignment is my own work, but I discussed it with: <Name(s)>
 """
-
+import math
 
 def average():
-    pass
+    grades = eval(input("Hello! How many grades do you have? "))
+    average_acc = 0
+    for i in range(grades):
+        user_input = eval(input("Enter a grade here: "))
+        average_acc = average_acc + user_input
+        average = average_acc / grades
+    print("Your average is: ", average)
 
 
 def tip_jar():
-    pass
+    num_people = 5
+    tip_acc = 0
+    for i in range(num_people):
+        tips = eval(input("Please enter your tip amount: "))
+        tip_acc = tip_acc + tips
+        tip_total = tip_acc
+    print("Total tips: ", tip_total, " Thank you for your generosity! :)")
 
 
 def newton():
-    pass
+    user_number = eval(input("What number do you wish to square root? "))
+    user_approx = eval(input("How many times do you want to improve the approximation? "))
+    approx = 0.5 * user_number
+    for j in range(user_approx):
+        approx_square = 0.5 * (approx + user_number / approx)
+    print("The square root is approximately ", approx_square)
 
 
 def sequence():
-    pass
+    terms = eval(input("How many terms would you like? "))
+    for j in range(1, terms + 5, 2):
+        print(j, end=',')
+    print()
+
+
 
 
 def pi():
-    pass
+    t_series = eval(input("How many terms are in the series? "))
+    result = t_series * 3.14159265359
+    print (result)
 
 
 if __name__ == '__main__':
