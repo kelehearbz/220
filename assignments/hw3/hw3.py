@@ -40,17 +40,16 @@ def newton():
 
 def sequence():
     terms = eval(input("How many terms would you like? "))
-    for j in range(1, terms + 5, 2):
-        print(j, end=',')
-    print()
+    for j in range(1, 9):
+        print((j % terms, end=" ")
 
 
 
 
 def pi():
     t_series = eval(input("How many terms are in the series? "))
-    result = t_series * 3.14159265359
-    print (result)
+    for k in range(1, 9):
+        print(k %2 + k-1)
 
 
 if __name__ == '__main__':
