@@ -11,7 +11,6 @@ I certify that this assignment is my own work, but I discussed it with: Belle Fo
 from graphics import *
 
 def vigenere():
-    #clicks = 1
     width = 500
     height = 500
     win = GraphWin ("Vigenere", width, height)
