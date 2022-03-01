@@ -5,7 +5,7 @@ lab6.py
 Problem: <Brief, one or two sentence description of the problem that this program solves, in your own words.>
 
 Certification of Authenticity:
-I certify that this assignment is my own work
+I certify that this assignment is my own work, but I discussed it with: Belle Fortson
 """
 
 from graphics import *
