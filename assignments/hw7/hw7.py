@@ -1,42 +1,62 @@
 """
-Name: <your name goes here – first and last>
-<ProgramName>.py
+Name: Ben Kelehear
+hw7.py
 
-Problem: <Brief, one or two sentence description of the problem that this program solves, in your own words.>
+Problem: I struggled a lot with this homework and took an extra day to focus on it, I apologize for errors and issues
+that may come up.
 
 Certification of Authenticity:
-<include one of the following>
 I certify that this assignment is entirely my own work.
-I certify that this assignment is my own work, but I discussed it with: <Name(s)>
 """
 
 
 def number_words(in_file_name, out_file_name):
-    pass
+    number_words_file = open("220/assignments/hw7/mytext.txt", "r")
+    number_words_file.read()
+    print("output.txt")
+
+number_words("mytext.txt", "output.txt")
 
 
 def hourly_wages(in_file_name, out_file_name):
-    pass
+    hourly_wages_file = open("220/assignments/hw7/hourly_wages.txt", "r")
+    hourly_wages_file.read()
+    print("hourly_wages_output.txt")
+
+hourly_wages("hourly_wages.txt", "hourly_wages_output.txt")
 
 
 def calc_check_sum(isbn):
-    pass
+    isbn = input("Please enter your isbn number: ")
+    calculate = isbn * 10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1
+    print("Your ISBN number is", calculate)
+
+
 
 
 def send_message(file_name, friend_name):
-    pass
+    message1 = open("220/assignments/hw7/message1.txt")
+    print("larry.txt")
+
+send_message("message1.txt", "larry.txt")
 
 
 def encode():
-    pass
+    str = input("Enter a message: ")
+    key = input("Enter a key: ")
+    print(str.replace("a", "d", key))
 
 
 def send_safe_message(file_name, friend_name, key):
-    pass
+    print("carrie.txt", key)
+
+senc_safe_message("encryption.py", "carrie.txt", key)
 
 
 def send_uncrackable_message(file_name, friend_name, pad_file_name):
-    pass
+    string = input("Enter a message: ")
+    key = input("Enter a key: ")
+    print(string.replace("a", "ace", key))
 
 
 if __name__ == '__main__':
