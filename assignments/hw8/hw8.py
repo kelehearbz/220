@@ -5,38 +5,66 @@ Name: <your name goes here – first and last>
 Problem: <Brief, one or two sentence description of the problem that this program solves, in your own words.>
 
 Certification of Authenticity:
-<include one of the following>
 I certify that this assignment is entirely my own work.
-I certify that this assignment is my own work, but I discussed it with: <Name(s)>
 """
 
-
 def add_ten(nums):
-    pass
-
+    num_split = num_list.split(" ")
+    for i in range(0, len(num_split)):
+        num_split[i] = eval(num_split[i])
+    solution = num_split[0] + 10, num_split[1] + 10, num_split[2] + 10
+    print(solution)
 
 def square_each(nums):
-    pass
+    num_split = num_list.split(" ")
+    for i in range(0, len(num_split)):
+        num_split[i] = eval(num_split[i])
+    solution = num_split[0] ** 2, num_split[1] ** 2, num_split[2] ** 2
+    print(solution)
 
 
 def sum_list(nums):
-    pass
+    num_split = num_list.split(" ")
+    acc = 0
+    for i in range(0, len(num_split)):
+        num_split[i] = eval(num_split[i])
+        num_acc = acc + num_split
+    print(num_acc)
+
+
 
 
 def to_numbers(nums):
-    pass
+    num_split = num_list.split(" ")
+    for i in range(0, len(num_split)):
+        num_split[i] = eval(num_split[i])
+    print(num_split)
+
+
 
 
 def sum_of_squares(nums):
-    pass
+    num_split = num_list.split(" ")
+    for i in range(0, len(num_split)):
+        num_split[i] = eval(num_split[i])
+    solution = num_split[0] ** 2 + num_split[1] ** 2 + num_split[2] ** 2
+    print(solution)
 
 
 def starter(weight, wins):
-    pass
+    if player_wt >= 199:
+        print("Congrats! You are the required weight.")
+    elif player_wins > 20:
+        print("Congrats! You have enough wins.")
+    else:
+        print("Sorry, you do not meet the requirements.")
 
 
 def leap_year(year):
-    pass
+    year = 345
+    leap = year / 4
+    print(leap)
+
 
 
 def circle_overlap():
@@ -59,8 +87,20 @@ def circle_overlap():
 
 
 def did_overlap(circle_one, circle_two):
-    pass
+    if circle_overlap > 20:
+        print("false")
 
 
 if __name__ == '__main__':
-    pass
+    circle1 = 15
+    circle2 = 20
+    did_overlap(circle1, circle2)
+    year = 345
+    leap_year(year)
+    num_list = "1 2 3"
+    add_ten(num_list)
+    square_each(num_list)
+    to_numbers(num_list)
+    player_wt = eval(input("How much does the player weigh?: "))
+    player_wins = eval(input("How many wins does the player have?: "))
+    starter(player_wt, player_wins)
