@@ -27,7 +27,7 @@ def weighted_average(input_file_name, output_file_name):
         else:
             print(line_split[0], "'s average: ", average)
     class_avg = average
-    print("The class average is: ", class_avg)
+    print("The class average is: ",  class_avg)
 
 
 
