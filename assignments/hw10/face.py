@@ -24,10 +24,10 @@ class Face:
         self.mouth.draw(window)
 
     def smile(self):
-        pass
+        self.smile = Line(50, 80)
 
     def shock(self):
-        pass
+        self.shock = Circle(50, 80)
 
     def wink(self):
-        pass
+        self.wink = Line(10, 40)
