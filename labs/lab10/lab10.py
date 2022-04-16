@@ -1,6 +1,6 @@
 """
 Name: Ben Kelehear
-lab4.py
+lab10.py
 
 Problem: <Brief, one or two sentence description of the problem that this program solves, in your own words.>
 
